@@ -63,10 +63,10 @@
 #welcome .box__title {
   position: absolute;
   top: 50%;
-  left: 15rem;
+  left: 16.5rem;
   transform: translate(0, -50%);
   z-index: 2;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 #welcome .box__title h2 {
@@ -74,6 +74,19 @@
   margin-bottom: 1rem;
 }
 
+#welcome .box__title h3 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
 #welcome .box__title p {
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1440px) {
+  #welcome .box__title h3 {
+    font-size: 4rem;
+    font-weight: 600;
+    max-width: 50rem;
+  }
 }
