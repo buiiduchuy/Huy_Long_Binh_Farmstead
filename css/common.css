@@ -100,10 +100,6 @@ p {
   padding-right: 1.5rem;
 }
 
-.container {
-  max-width: 1200px;
-}
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -169,9 +165,10 @@ p {
 .btn__comp {
   background: var(--primary-color);
   box-shadow: none;
-  border: 1px solid var(--primary-color);
+  border: 1px solid transparent;
   border-radius: 3rem;
   color: var(--white);
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -182,6 +179,10 @@ p {
 .btn__comp:hover {
   background: var(--second-color);
   border-color: var(--second-color);
+}
+
+.section {
+  padding: 10rem 0;
 }
 
 /* ============================================================

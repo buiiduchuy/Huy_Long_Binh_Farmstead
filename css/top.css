@@ -1,6 +1,8 @@
 #welcome {
   height: 100vh;
   position: relative;
+  overflow: hidden;
+  padding: 0;
 }
 
 #welcome .row>* {
@@ -63,7 +65,7 @@
 #welcome .box__title {
   position: absolute;
   top: 50%;
-  left: 16.5rem;
+  left: 16rem;
   transform: translate(0, -50%);
   z-index: 2;
   max-width: 60rem;
@@ -88,5 +90,204 @@
     font-size: 4rem;
     font-weight: 600;
     max-width: 50rem;
+  }
+}
+
+/* ============================================================
+		GROW
+============================================================ */
+#grow {
+  padding: 10rem 0;
+}
+
+#grow .btn__comp {
+  margin-top: 3.5rem;
+}
+
+#grow .list__icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#grow .box__icon {
+  background-color: var(--white);
+  border-radius: 3rem;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.035);
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.theme__dark #grow .box__icon {
+  background-color: var(--bg-color);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.35);
+}
+
+#grow .box__icon:hover {
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.09);
+}
+
+#grow .icon img {
+  max-height: 6.5rem;
+  margin-bottom: 2rem;
+  width: auto;
+}
+
+#grow .box__icon a {
+  color: var(--title-color);
+  font-size: 2rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.theme__dark #grow .box__icon a {
+  color: var(--white);
+}
+
+#grow .box__icon a:hover {
+  color: var(--second-color);
+}
+
+/* ============================================================
+		SERVICES
+============================================================ */
+#services {
+  background-color: var(--second-color);
+}
+
+#services .box__title {
+  position: relative;
+}
+
+#services .box__title h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.14;
+  font-size: 12vw;
+}
+
+#services .box__title h3,
+#services .box__title h4,
+#services .box__title p {
+  color: var(--white);
+}
+
+#services .box__title p {
+  font-weight: 300;
+}
+
+#services .list__article article {
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.theme__dark #services .list__article article {
+  background-color: var(--bg-color);
+}
+
+#services .list__article .cont {
+  padding: 2rem;
+}
+
+#services .list__article .cat {
+  background: rgb(0 159 77 / 16%);
+  border-radius: 2.5rem;
+  color: var(--second-color);
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.4rem 2rem;
+}
+
+#services .list__article .title {
+  display: block;
+  color: var(--title-color);
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.theme__dark #services .list__article .title {
+  color: var(--white);
+}
+
+/* ============================================================
+		QUALITY
+============================================================ */
+.custom__padding>* {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#quality .box__title {
+  margin-bottom: 5rem;
+}
+
+#quality .box__icon {
+  display: flex;
+}
+
+#quality .box__icon .icon i {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+#quality .box__icon .cont {
+  padding-left: 1rem;
+}
+
+#quality .box__icon .cont h4 {
+  color: var(--title-color);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.theme__dark #quality .box__icon .cont h4 {
+  color: var(--white);
+}
+
+#quality .box__icon .cont p {
+  font-size: 1.7rem;
+}
+
+#quality .data__imgage {
+  position: relative;
+  padding-left: 10rem;
+}
+
+#quality .data__imgage img {
+  border-radius: 2.5rem;
+}
+
+#quality .data__imgage .exp {
+  background-color: var(--primary-color);
+  color: var(--white);
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  padding: 2rem 7rem 2rem;
+  text-align: center;
+  border-bottom-right-radius: 10rem;
+  box-shadow: 2rem 2rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+#quality .data__imgage .exp h3 {
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+#quality .data__imgage .exp p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  #quality .box__icon .cont h4 {
+    font-size: 2rem;
   }
 }
