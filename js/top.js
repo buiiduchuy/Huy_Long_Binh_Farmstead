@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+  // slider top
   $(".data__sliders").owlCarousel({
     items: 1,
     loop: true,
@@ -6,5 +7,10 @@ jQuery(document).ready(function ($) {
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
     smartSpeed: 1000,
+  });
+
+  // gallery
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options for a specific gallery
   });
 });

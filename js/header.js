@@ -1,3 +1,4 @@
+const currentUrl = window.location.origin;
 const header = `
 <div class="container">
       <div class="head__content">
@@ -25,22 +26,22 @@ const header = `
         <nav>
           <ul>
             <li class="page__home">
-              <a href="index.html">Home</a>
+              <a href="${currentUrl}/index.html">Home</a>
             </li>
             <li class="page__about">
-              <a href="./about/">About</a>
+              <a href="${currentUrl}/about/">About</a>
             </li>
             <li class="page__services">
-              <a href="./services/">Services</a>
+              <a href="${currentUrl}/services/">Services</a>
             </li>
             <li class="page__blog">
-              <a href="./blog/">Blog Post</a>
+              <a href="${currentUrl}/blog/">Blog Post</a>
             </li>
             <li class="page__404">
-              <a href="./404-page/">404 Page</a>
+              <a href="${currentUrl}/404-page/">404 Page</a>
             </li>
             <li class="page__contact">
-              <a href="./contact/">Contact</a>
+              <a href="${currentUrl}/contact/">Contact</a>
             </li>
           </ul>
         </nav>
