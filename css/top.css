@@ -324,6 +324,16 @@
   color: var(--second-color) !important;
 }
 
+@media screen and (max-width: 1200px) {
+  #list__service .box__icon {
+    padding: 2rem 1rem;
+  }
+
+  #list__service .box__icon .icon img {
+    width: 4.5rem;
+  }
+}
+
 /* ============================================================
 		GALLERY
 ============================================================ */
