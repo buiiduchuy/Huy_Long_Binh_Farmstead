@@ -14,7 +14,7 @@ $(function () {
   });
 
   //active menu
-  const pageName = $("body").attr("class");
+  const pageName = $("body").attr("id");
   $(".header").find(`.${pageName}`).children().addClass("active");
 
   window.addEventListener("scroll", function (event) {

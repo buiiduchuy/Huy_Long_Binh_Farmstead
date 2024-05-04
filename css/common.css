@@ -29,7 +29,7 @@ html,
 body {
   color: var(--text-color);
   font-size: 1.6rem;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -90,7 +90,7 @@ p {
   --gray: #f4f4f4;
   --gray-drak: #0b0d0e;
   --bg-color: #222222;
-  --text-font-family: "Source Sans 3", sans-serif;
+  --text-font-family: 'Source Sans Pro';
   --bg-body: #fff;
   --bg-body-dark: #212121;
 }
