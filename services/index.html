@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    <link href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
         rel="stylesheet">
     <!-- Carousel -->
     <link rel="stylesheet" href="./../css/owl.carousel.min.css">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../css/service.css">
 </head>
 
-<body class="page__services">
+<body id="page__services">
     <header class="header"></header>
     <main>
         <section class="inner__banner">
@@ -125,7 +125,7 @@
                                 adipisicing
                                 elit. Non quae, fugiat.</p>
                         </div>
-                        <div class="row custom__padding">
+                        <div class="row custom__padding mt-5">
                             <div class="col-6">
                                 <div class="box__icon">
                                     <div class="icon">
@@ -155,52 +155,65 @@
         </section>
 
         <section class="stats py-5" id="stats">
-            <div class="container pb-md-5 pb-5">
-                <div class="w3-stats text-center">
-                    <div class="row justify-content-center">
-
-                        <div class="col-md-3 col-6">
-                            <div class="counter">
-                                <span class="fa fa-bullhorn"></span>
-                                <div class="timer count-title counterUp mt-3">1286</div>
-                                <p class="count-text">
-                                    Our Farms </p>
-                            </div>
+            <div class="container pb-md-5 pb-5 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-6">
+                        <div>
+                            <i class="fa fa-bullhorn"></i>
+                            <p class="counter">1,286</p>
+                            <p class="count__text">
+                                Our Farms </p>
                         </div>
-
-                        <div class="col-md-3 col-6">
-                            <div class="counter">
-                                <span class="fa fa-shopping-basket"></span>
-                                <div class="timer count-title count-number mt-3" data-to="36076" data-speed="1500">
-                                </div>
-                                <p class="count-text">
-                                    Agriculture Products </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-6 mt-md-0 mt-5">
-                            <div class="counter">
-                                <span class="fa fa-smile-o"></span>
-                                <div class="timer count-title count-number mt-3" data-to="16300" data-speed="1500">
-                                </div>
-                                <p class="count-text">
-                                    Happy Customers </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-6 mt-md-0 mt-5">
-                            <div class="counter">
-                                <span class="fa fa-trophy"></span>
-                                <div class="timer count-title count-number mt-3" data-to="10630" data-speed="1500">
-                                </div>
-                                <p class="count-text">
-                                    Awards Won </p>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="col-md-3 col-6">
+                        <div>
+                            <i class="fa fa-shopping-basket"></i>
+                            <p class="counter">36,076
+                            </p>
+                            <p class="count__text">
+                                Agriculture Products </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div>
+                            <i class="fa fa-smile-o"></i>
+                            <p class="counter">16,300
+                            </p>
+                            <p class="count__text">
+                                Happy Customers </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div>
+                            <i class="fa fa-trophy"></i>
+                            <p class="counter">10630
+                            </p>
+                            <p class="count__text">
+                                Awards Won </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </section>
+
+        <section class="cover">
+            <!-- <div class="container py-md-5 py-4">
+                <div class="row py-5">
+                    <div class="col-md-7">
+                        <div class="left-content-bg">
+                            <h5 class="small-title text-white mb-2">
+                                Agriculture Theme </h5>
+                            <h3 class="title-style text-white">
+                                You can request for call back, we will call ! </h3>
+                            <a class="btn btn-style mt-4" href="#url">Request for call back</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </section>
     </main>
     <footer class="footer"></footer>
@@ -211,12 +224,12 @@
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./js/jquery.countup.min.js">	</script>
+    <script src="./../js/jquery.countup.min.js">	</script>
     <script>
 
-        $('.counter').counterUp({
+        $('.counter').countUp({
             delay: 10,
-            time: 3000
+            time: 300
         });
 
     </script>
