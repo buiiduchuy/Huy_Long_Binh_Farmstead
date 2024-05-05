@@ -49,3 +49,16 @@ h6 {
 .inner__banner .py-5 {
   padding: 6.81rem 0 !important;
 }
+
+.inner__banner h1.inner__title {
+  font-weight: bold;
+  color: var(--title-color);
+  font-family: "Volkhov", serif;
+  margin-bottom: 0.5rem !important;
+}
+
+.inner__banner ul.custom__path a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #707070;
+}
