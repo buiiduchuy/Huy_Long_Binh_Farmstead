@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.welcome .container{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.welcome .welcome_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.welcome .content_left span{
+    color: #FB8133;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.welcome .content_left h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.welcome .content_left p{
+    color: #707070;
+}
+.welcome .content_left button{
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #FB8133;
+    transition: all .5s;
+    border: 1px solid #FB8133;
+    color: #fff;
+    font-weight: bolder;
+}
+.welcome .content_left button:hover{
+    background-color: #009f4d;
+    border-color: #009f4d;
+}
+.welcome .content_right img{
+    border-radius: 10px;
+}
+/* Number  */
+.number{
+    margin-top: 60px;
+}
+.number .container{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.number .number_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.number .content_item i{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #F5FBF8;
+    color: #009F4D;
+    font-size: 25px;
+}
+.number .content_item h2{
+    font-size: 50px;
+    margin: 10px 0;
+    font-weight: bolder;
+}
+.number .content_item p{
+    font-size: 17px;
+}
