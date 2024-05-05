@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  clear: both;
+  /* font-family: "Source Sans Pro", sans-serif; */
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  header.main__header {
+    height: auto;
+    padding: 17px 0;
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 1rem;
+  color: #fb811e;
+}
+
+.inner__banner {
+  background-image: url(./../image/services/inner-banner.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.inner__banner .py-5 {
+  padding: 6.81rem 0 !important;
+}
