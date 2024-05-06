@@ -139,12 +139,16 @@
 /* ============================================================
 		GROW
 ============================================================ */
-#grow {
-  padding: 10rem 0;
+.round-6 {
+  border-radius: 3rem;
 }
 
-#grow .btn__comp {
-  margin: 3.5rem 0;
+.my-sm-6 {
+  margin: 4.8rem 0;
+}
+
+#grow {
+  padding: 10rem 0;
 }
 
 #grow .list__icon {
@@ -156,10 +160,7 @@
 
 #grow .box__icon {
   background-color: var(--white);
-  border-radius: 3rem;
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.035);
-  padding: 3rem;
-  text-align: center;
   transition: all 0.3s;
 }
 
@@ -176,6 +177,10 @@
   max-height: 6.5rem;
   margin-bottom: 2rem;
   width: auto;
+}
+
+#grow .box__title p {
+  font-size: 1.7rem;
 }
 
 #grow .box__icon a {
@@ -231,28 +236,16 @@
   font-size: 12vw;
 }
 
-#services .box__title h3,
-#services .box__title h4,
-#services .box__title p {
-  color: var(--white);
-}
-
-#services .box__title p {
-  font-weight: 300;
+.theme__dark #services .box__title h2 {
+  color: var(--gray);
 }
 
 #services .list__article article {
   background-color: var(--white);
-  border-radius: 1.5rem;
-  overflow: hidden;
 }
 
 .theme__dark #services .list__article article {
   background-color: var(--bg-color);
-}
-
-#services .list__article .cont {
-  padding: 2rem;
 }
 
 #services .list__article .cat {
@@ -277,26 +270,18 @@
   color: var(--white);
 }
 
-@media screen and (max-width: 767px) {
-  #services .box__title p {
-    margin-bottom: 2rem;
-  }
-}
+@media screen and (max-width: 767px) {}
 
 /* ============================================================
 		QUALITY
 ============================================================ */
+.mb-6 {
+  margin-bottom: 4.8rem;
+}
+
 .custom__padding>* {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-#quality .box__title {
-  margin-bottom: 5rem;
-}
-
-#quality .box__icon {
-  display: flex;
 }
 
 #quality .box__icon .icon i {
@@ -360,10 +345,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  #quality .box__icon .cont h4 {
-    margin-bottom: 1rem;
-  }
-
   .custom__padding>* {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -442,14 +423,9 @@
 /* ============================================================
 		GALLERY
 ============================================================ */
-#gallery .list__gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-#gallery .list__gallery .item {
-  position: relative;
-  overflow: hidden;
+#list__gallery,
+#list__gallery .item {
+  padding: 0 !important;
 }
 
 #gallery .list__gallery .item:nth-child(1) {
@@ -490,8 +466,6 @@
 }
 
 #gallery .list__gallery .ttl {
-  background: rgba(255, 255, 255, 0.27);
-  color: var(--white);
   font-size: 2rem;
   font-weight: 600;
   position: absolute;
@@ -524,15 +498,10 @@
   }
 }
 
-@media screen and (max-width: 991px) {
-  #gallery .list__gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+@media screen and (max-width: 991px) {}
 
 @media screen and (max-width: 767px) {
   #gallery .list__gallery .item:nth-child(1) {
-    grid-column: 1 / span 2;
     margin-bottom: 1.5rem;
   }
 }

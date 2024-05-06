@@ -7,10 +7,13 @@ $(function () {
   });
 
   // toggle theme
-  const iconTheme = document.querySelector(".header .theme");
+  const iconTheme = document.querySelectorAll(".header .theme");
   const body = document.querySelector("body");
-  iconTheme.addEventListener("click", function () {
-    body.classList.toggle("theme__dark");
+
+  iconTheme.forEach((theme) => {
+    theme.addEventListener("click", function () {
+      body.classList.toggle("theme__dark");
+    });
   });
 
   //active menu
