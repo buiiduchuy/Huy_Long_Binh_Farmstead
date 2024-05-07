@@ -16,6 +16,12 @@ $(function () {
     });
   });
 
+  if (document.body.classList.contains("theme__dark")) {
+    // session
+    const testSession = sessionStorage.setItem("lastname", "Smith");
+    alert(testSession);
+  }
+
   //active menu
   const pageName = $("body").attr("id");
   $(".header").find(`.${pageName}`).children().addClass("active");
