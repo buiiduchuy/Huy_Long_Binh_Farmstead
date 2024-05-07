@@ -51,11 +51,16 @@ h6 {
   z-index: 1;
   border-radius: 15px;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+  transition: 0.3s;
+}
+.theme__dark .services .service__item .item__box {
+  background-color: var(--bg-color);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
 }
 
 .services .service__item .item__box:hover {
-  transition: 0.3s;
-  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.09);
 }
 
 .services .service__item i {
@@ -76,6 +81,13 @@ h6 {
   transition: all 0.3s;
 }
 
+.theme__dark .services .service__item h4 a {
+  color: var(--white);
+}
+
+.theme__dark .services .service__item h4 a {
+  color: var(--white);
+}
 .services .service__item h4 a:hover {
   color: var(--primary-color);
 }
@@ -84,6 +96,10 @@ h6 {
   font-size: 17px;
   line-height: 27px;
   color: #707070;
+}
+
+.theme__dark .services .service__item p {
+  color: var(--text-color-dark-theme);
 }
 
 /* ============================================================
@@ -139,7 +155,17 @@ h6 {
 .custom__padding .box__icon .cont p {
   font-size: 1.7rem;
 }
+@media (min-width: 992px) {
+  .order__last {
+    order: 13;
+  }
+}
 
+@media (min-width: 992px) {
+  .order-lg-first {
+    order: -1;
+  }
+}
 /* ============================================================
 		Stats
 ============================================================ */

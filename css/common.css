@@ -761,3 +761,12 @@ header .head__search input:focus {
   color: var(--title-color);
   font-size: 2.4rem;
 }
+
+.theme__dark .breadCrumb .title {
+  color: var(--white);
+}
+
+.theme__dark .custom__path,
+.theme__dark .custom__path a {
+  color: var(--text-color-dark-theme);
+}
