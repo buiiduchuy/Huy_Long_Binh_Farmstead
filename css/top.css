@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+  .logo .logo__link {
+    color: var(--primary-color) !important;
+  }
+}
+
 #welcome {
   height: 100vh;
   position: relative;
@@ -170,7 +176,7 @@
 }
 
 #grow .box__icon:hover {
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.09);
 }
 
 #grow .icon img {
@@ -429,7 +435,7 @@
 }
 
 #gallery .list__gallery .item:nth-child(1) {
-  padding-right: 1rem;
+  padding-right: 1rem !important;
 }
 
 #gallery .list__gallery .item:not(:first-child) {
@@ -495,6 +501,7 @@
 
   #gallery .box__title p {
     margin: 1rem 0;
+    font-size: 1.7rem;
   }
 }
 
