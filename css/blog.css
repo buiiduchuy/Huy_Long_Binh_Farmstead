@@ -232,7 +232,6 @@ h2.widget__title a {
 
 .widget__entries ul li a:hover {
   color: var(--primary-color);
-  transition: 0.3s ease;
 }
 
 .widget__comments ul li {
@@ -248,4 +247,23 @@ h2.widget__title a {
 
 .widget__comments ul li a:hover {
   text-decoration: underline;
+}
+
+li.list__menu {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid #eee;
+}
+
+li.list__menu a {
+  text-transform: capitalize;
+  line-height: 2.5rem !important;
+  transition: 0.3s all;
+  font-size: 1.8rem !important;
+  color: var(--title-color) !important;
+}
+
+li.list__menu a:hover {
+  color: var(--primary-color) !important;
 }
