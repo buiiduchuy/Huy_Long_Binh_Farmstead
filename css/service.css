@@ -105,6 +105,12 @@ h6 {
 /* ============================================================
 		QUALITY
 ============================================================ */
+.qualify .row.custom__padding {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .qualify .row.custom__padding > * {
   padding-left: 1rem;
 }
