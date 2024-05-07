@@ -37,7 +37,7 @@ h6 {
   color: #fb811e;
 }
 
-.inner__banner {
+.breadCrumb {
   background-image: url(./../image/services/inner-banner.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -46,19 +46,37 @@ h6 {
   z-index: 0;
 }
 
-.inner__banner .py-5 {
+.breadCrumb .py-5 {
   padding: 6.81rem 0 !important;
 }
 
-.inner__banner h1.inner__title {
+.breadCrumb h1.inner__title {
   font-weight: bold;
   color: var(--title-color);
   font-family: "Volkhov", serif;
   margin-bottom: 0.5rem !important;
 }
 
-.inner__banner ul.custom__path a {
+.breadCrumb ul.custom__path a {
   text-decoration: none;
   font-weight: 700;
   color: #707070;
+}
+
+/* ============================================================
+		Card
+============================================================ */
+
+.card {
+  border: none;
+  background-color: var(--white);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  padding: 1em;
+}
+
+.card img {
+  height: 100%;
 }
