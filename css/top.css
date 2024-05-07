@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+  .logo .logo__link {
+    color: var(--primary-color) !important;
+  }
+}
+
 #welcome {
   height: 100vh;
   position: relative;
