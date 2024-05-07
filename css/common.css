@@ -715,7 +715,7 @@ header .head__search input:focus {
 ============================================================ */
 
 .breadCrumb {
-  background-image: url(./../image/bg_breadcrumb.png);
+  background-image: url(./../image/common/bg_breadcrumb.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
