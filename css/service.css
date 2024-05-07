@@ -105,9 +105,11 @@ h6 {
 /* ============================================================
 		QUALITY
 ============================================================ */
-
-.qualify .order__last .custom__padding {
+.qualify .row.custom__padding > * {
   padding-left: 1rem;
+}
+.qualify .order__last .custom__padding {
+  padding-left: 0rem;
   padding-right: 1rem;
 }
 
@@ -127,6 +129,11 @@ h6 {
   line-height: 50px;
   font-weight: 600;
   color: #060606;
+}
+
+.qualify .box__title p {
+  font-size: 1.7rem;
+  margin-top: 1.6rem;
 }
 
 .custom__padding .box__icon {
@@ -181,17 +188,20 @@ h6 {
   font-size: 32px;
 }
 
-.stats p:first-of-type {
+.stats p.counter {
   font-size: 3em;
   font-weight: 600;
   color: var(--title-color);
   margin-top: 1.6rem !important;
 }
-
 .stats p.count__text {
   text-transform: uppercase;
   color: var(--title-color);
   font-size: 17px;
+}
+
+.theme__dark .stats p {
+  color: var(--white);
 }
 
 /* ============================================================
