@@ -7,6 +7,10 @@
   font-weight: 600;
 }
 
+.theme__dark #contact ul li h6 {
+  color: var(--white);
+}
+
 #contact ul li .icon i {
   color: var(--primary-color);
   font-size: 2rem;
@@ -36,6 +40,12 @@
 #contact .form__contact textarea:focus {
   border-color: var(--primary-color);
   outline: none;
+}
+
+.theme__dark #contact .form__contact input,
+.theme__dark #contact .form__contact textarea {
+  background: var(--bg-color) !important;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 ::placeholder {
