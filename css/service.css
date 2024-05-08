@@ -215,6 +215,9 @@ h6 {
 /* ============================================================
 		Stats
 ============================================================ */
+.stats {
+  padding-bottom: 5rem !important;
+}
 
 .stats i {
   color: var(--second-color);
@@ -229,9 +232,10 @@ h6 {
 
 .stats p.counter {
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--title-color);
   margin-top: 1.6rem !important;
+  margin-bottom: 0rem !important;
 }
 .stats p.count__text {
   text-transform: uppercase;
