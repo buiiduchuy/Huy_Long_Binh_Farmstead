@@ -6,15 +6,14 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  line-height: 28px;
+  line-height: 2.8rem;
   clear: both;
-  /* font-family: "Source Sans Pro", sans-serif; */
 }
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
   font-family: "Source Sans Pro", sans-serif;
@@ -23,7 +22,7 @@ h6 {
 @media screen and (max-width: 991px) {
   header.main__header {
     height: auto;
-    padding: 17px 0;
+    padding: 1.7rem 0;
   }
 }
 
@@ -46,10 +45,10 @@ h6 {
 }
 
 .services .service__item .item__box {
-  padding: 50px 35px;
+  padding: 5rem 3.5rem;
   position: relative;
   z-index: 1;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
   transition: 0.3s;
 }
@@ -64,18 +63,18 @@ h6 {
 }
 
 .services .service__item i {
-  font-size: 45px;
+  font-size: 4.5rem;
   color: #fb811e;
 }
 
 .services .service__item h4 a {
-  margin-top: 25px;
+  margin-top: 2.5rem;
   display: block;
   color: #060606;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 15px;
-  font-size: 22px;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
   letter-spacing: 0;
   text-decoration: none;
   transition: all 0.3s;
@@ -93,8 +92,8 @@ h6 {
 }
 
 .services .service__item p {
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
   color: #707070;
 }
 
@@ -106,27 +105,50 @@ h6 {
 		QUALITY
 ============================================================ */
 
-.qualify .order__last .custom__padding {
+.qualify .row.custom__qualify > * {
+  padding-right: 0rem;
+}
+
+.qualify .row.custom__padding {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.qualify .row.custom__padding > * {
   padding-left: 1rem;
+}
+
+.qualify .order__last .custom__padding {
+  padding-left: 0rem;
   padding-right: 1rem;
 }
 
 .qualify img {
   max-width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 3rem;
 }
 
 .qualify .small__title {
   color: #fb811e;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .qualify .title {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 4rem;
+  line-height: 5rem;
   font-weight: 600;
   color: #060606;
+}
+
+.box__title p {
+  font-size: 1.7rem;
+}
+
+.qualify .custom__padding.mt-5 {
+  margin-top: 5rem !important;
 }
 
 .custom__padding .box__icon {
@@ -146,6 +168,7 @@ h6 {
   color: var(--title-color);
   font-size: 2.4rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .theme__dark .custom__padding .box__icon .cont h4 {
@@ -155,6 +178,11 @@ h6 {
 .custom__padding .box__icon .cont p {
   font-size: 1.7rem;
 }
+
+.qualify .order__first.mt-5 {
+  margin-top: 4.5rem !important;
+}
+
 @media (min-width: 992px) {
   .order__last {
     order: 13;
@@ -166,6 +194,24 @@ h6 {
     order: -1;
   }
 }
+
+@media (min-width: 992px) {
+  .pl-lg-5 {
+    padding-left: 5rem !important;
+  }
+}
+@media (max-width: 568px) {
+  .qualify .title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .custom__padding .box__icon .cont h4 {
+    font-size: 2rem;
+  }
+}
 /* ============================================================
 		Stats
 ============================================================ */
@@ -173,25 +219,28 @@ h6 {
 .stats i {
   color: var(--second-color);
   text-align: center;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  width: 8rem;
+  height: 8rem;
+  line-height: 8rem;
   border-radius: 50%;
   background: rgb(0 159 77 / 4%);
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
-.stats p:first-of-type {
+.stats p.counter {
   font-size: 3em;
   font-weight: 600;
   color: var(--title-color);
   margin-top: 1.6rem !important;
 }
-
 .stats p.count__text {
   text-transform: uppercase;
   color: var(--title-color);
-  font-size: 17px;
+  font-size: 1.7rem;
+}
+
+.theme__dark .stats p {
+  color: var(--white);
 }
 
 /* ============================================================
@@ -220,17 +269,11 @@ h6 {
   z-index: 1;
 }
 .cover h5 {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .cover h3 {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 4rem;
+  line-height: 5rem;
   font-weight: 600;
-}
-
-@media (min-width: 992px) {
-  .pl-lg-5 {
-    padding-left: 3rem !important;
-  }
 }
