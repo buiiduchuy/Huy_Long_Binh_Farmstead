@@ -228,8 +228,8 @@ h6 {
 }
 
 .stats p.counter {
-  font-size: 3em;
-  font-weight: 600;
+  font-size: 5rem;
+  font-weight: 500;
   color: var(--title-color);
   margin-top: 1.6rem !important;
 }
@@ -252,6 +252,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding: 3.7rem 0 3rem;
 }
 
 .cover::after {
