@@ -215,6 +215,9 @@ h6 {
 /* ============================================================
 		Stats
 ============================================================ */
+.stats {
+  padding-bottom: 5rem !important;
+}
 
 .stats i {
   color: var(--second-color);
@@ -228,11 +231,12 @@ h6 {
 }
 
 .stats p.counter {
-  font-size: 3em;
+  font-size: 5rem;
   font-weight: 600;
   color: var(--title-color);
-  margin-top: 1.6rem !important;
+  margin-top: 1.6rem 0 0rem !important;
 }
+
 .stats p.count__text {
   text-transform: uppercase;
   color: var(--title-color);
@@ -252,6 +256,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding: 3.7rem 0 3rem;
 }
 
 .cover::after {
