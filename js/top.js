@@ -9,6 +9,7 @@ jQuery(document).ready(function ($) {
     smartSpeed: 1000,
   });
 
+  // testimonials
   $("#testimonials .owl-carousel").owlCarousel({
     items: 1,
     loop: true,

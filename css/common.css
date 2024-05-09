@@ -356,6 +356,7 @@ header .head__search input:focus {
   width: 3rem;
   height: 2rem;
   margin-left: 0.5rem;
+  transition: all 0.3s;
 }
 
 .header nav.active {
@@ -410,6 +411,7 @@ header .head__search input:focus {
   height: 3rem;
   margin-left: 1rem;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .theme:hover i {
@@ -546,6 +548,24 @@ header .head__search input:focus {
   .logo .logo__link i {
     top: -1rem;
     left: 5rem;
+  }
+
+  .menu__icon.off {
+    width: 0;
+    opacity: 0;
+  }
+
+  .theme.off {
+    width: 0;
+    opacity: 0;
+  }
+
+  header .head__search input:focus {
+    width: 18rem;
+  }
+
+  header .head__search input {
+    width: 3.5rem;
   }
 }
 
@@ -774,4 +794,10 @@ header .head__search input:focus {
 .theme__dark .custom__path,
 .theme__dark .custom__path a {
   color: var(--text-color-dark-theme);
+}
+
+@media screen and (max-width: 767px) {
+  .breadCrumb .py-5 {
+    padding: 4.71rem 0 !important;
+  }
 }

@@ -25,6 +25,10 @@
   transition: all 0.3s;
 }
 
+.theme__dark #contact ul li a {
+  color: var(--text-color-dark-theme);
+}
+
 #contact ul li a:hover {
   color: var(--primary-color);
 }
@@ -36,6 +40,8 @@
   padding: 1.4rem;
 }
 
+.theme__dark #contact .form__contact input:focus,
+.theme__dark #contact .form__contact textarea:focus,
 #contact .form__contact input:focus,
 #contact .form__contact textarea:focus {
   border-color: var(--primary-color);
