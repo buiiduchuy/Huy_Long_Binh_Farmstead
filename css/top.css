@@ -516,3 +516,84 @@
     padding: 0 1.5rem;
   }
 }
+
+/* ============================================================
+		TESTIMONIALS
+============================================================ */
+#testimonials {
+  background-image: url("../image/top/bg1.jpeg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#testimonials::after {
+  background: rgb(10 10 10 / 52%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#testimonials .owl-carousel {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+#testimonials .data__img img {
+  max-width: 9rem;
+}
+
+#testimonials .data__img h5 {
+  font-size: 2rem;
+}
+
+#testimonials .data__img p {
+  font-size: 1.6rem;
+}
+
+#testimonials .data__text span {
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#testimonials .data__text q {
+  display: block;
+  font-size: 2.2rem;
+  line-height: 1.55;
+  text-indent: 3rem;
+}
+
+#testimonials .owl-carousel .owl-dots {
+  margin-top: 5rem;
+}
+
+#testimonials .owl-carousel .owl-dot span {
+  background: var(--white);
+  opacity: 0.3;
+}
+
+#testimonials .owl-carousel .owl-dot.active span {
+  background: var(--primary-color);
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  #testimonials {
+    background-position: center left;
+  }
+
+  #testimonials .data__img h5 {
+    font-size: 1.8;
+  }
+
+  #testimonials .data__text q {
+    font-size: 1.7rem;
+  }
+}
