@@ -188,24 +188,24 @@
     align-items: center;
     justify-content: space-between;
 }
-.welcome .content_left span{
+.welcome .box__title span{
     color: #FB8133;
     font-size: 22px;
     font-weight: bolder;
 }
-.welcome .content_left h2{
+.welcome .box__title h2{
     font-size: 40px;
     font-weight: bolder;
     color: #070707;
 }
-.theme__dark .welcome .content_left h2{
+.theme__dark .welcome .box__title h2{
   color: #fff;
 }
 .welcome .box__title p{
     color: #707070;
     font-size: 1.7rem;
 }
-.theme__dark .welcome .content_left p{
+.theme__dark .welcome .box__title p{
     color: #b7b7b7;
 }
 .welcome .content_left button{
@@ -366,6 +366,7 @@
 }
 .team .overlay_title h3:hover{
     color: #FB8133;
+    cursor: pointer;
 }
 .team .overlay_contact{
     position: absolute;
@@ -390,6 +391,7 @@
 }
 .team .overlay_contact i:hover {
     color: #FB8133;
+    cursor: pointer;
 }
 .team .item_text h2{
     font-size: 21px;
@@ -398,6 +400,7 @@
 }
 .team .item_text h2:hover{
     color: #FB8133;
+    cursor: pointer;
 }
 .team .item_text p{
     color: black;
