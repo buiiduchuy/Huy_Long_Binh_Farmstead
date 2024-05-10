@@ -16,10 +16,14 @@ $(function () {
       if (body.classList.contains("theme__dark")) {
         localStorage.setItem("theme", "dark");
       } else {
-        localStorage.removeItem("theme", "dark");
+        localStorage.setItem("theme", "light");
       }
     });
   });
+
+  if (localStorage.getItem("theme") == "dark") {
+    body.classList.add("theme__dark");
+  }
 
   // handle ani scale input header
   const inputHeader = document.querySelector(".head__search");
