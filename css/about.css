@@ -208,15 +208,18 @@
 .welcome .content_left p{
     color: #707070;
 }
+.theme__dark .welcome .content_left p{
+    color: #b7b7b7;
+}
 .welcome .content_left button{
     padding: 12px 30px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #FB8133;
     transition: all .5s;
-    border: 1px solid #FB8133;
+    border: none;
     color: #fff;
-    font-weight: bolder;
+    font-weight: 600;
 }
 .welcome .content_left button:hover{
     background-color: #009f4d;
@@ -248,26 +251,31 @@
     line-height: 80px;
     background-color: #F5FBF8;
     color: #009F4D;
-    font-size: 32px;
+    font-size: 40px;
 }
 .theme__dark .number .content_item i{
-  background-color: black;
+  background-color: #212724;
 }
 .number .content_item span{
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: 600;
     margin: 10px 0;
     display: block;
     font-weight: bolder;
     color: #070707;
 }
+.theme__dark .number .content_item span, .theme__dark .number .content_item p{
+    color: #fff;
+}
 .number .content_item p{
     font-size: 17px;
+    color: #060606;
 }
 
 /* Team  */
 .team{
     background-color: #009F4D;
-    padding: 90px 0;
+    padding: 60px 0;
     margin: 60px 0;
 }
 /* .team .container{
@@ -276,7 +284,7 @@
 } */
 .team .team_title{
     position: relative;
-    margin: 60px 0;
+    margin: 40px 0;
 }
 .team .team_title h2{
   position: absolute;
@@ -350,7 +358,13 @@
     background-color: rgba(8, 8, 8, 54%);
     transform: translateY(20px);
 } */
-
+.team .overlay_title h3{
+    transition: all .5s;
+    font-size: 25px;
+}
+.team .overlay_title h3:hover{
+    color: #FB8133;
+}
 .team .overlay_contact{
     position: absolute;
     margin: 0 auto;
@@ -378,22 +392,31 @@
 .team .item_text h2{
     font-size: 21px;
     font-weight: bolder;
+    transition: all .5s;
+}
+.team .item_text h2:hover{
+    color: #FB8133;
 }
 .team .item_text p{
     color: black;
+    font-size: 1.6rem;
 }
 /* Product  */
 .product .container{
-    max-width: 1290px ;
+    max-width: 950px ;
     margin: 0 auto;
 }
 .product .product_title h2{
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
+    color: #060606;
 }
 .theme__dark .product_title h2{
   color: #fff;
+}
+.product .product_title p{
+    color: #707070;
 }
 .theme__dark .product_title p{
   color: #b7b7b7;
@@ -456,6 +479,7 @@
     border: 1px solid white;
     border-radius: 50%;
     text-align: center;
+    font-size: 1.6rem;
 }
 /* Carousel  */
 .carousel{
