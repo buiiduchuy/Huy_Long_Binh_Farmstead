@@ -183,10 +183,6 @@
 .welcome{
     margin: 80px 0;
 }
-.welcome .container{
-    max-width: 1290px;
-    margin: 0 auto;
-}
 .welcome .welcome_content{
     display: flex;
     align-items: center;
@@ -205,8 +201,9 @@
 .theme__dark .welcome .content_left h2{
   color: #fff;
 }
-.welcome .content_left p{
+.welcome .box__title p{
     color: #707070;
+    font-size: 1.7rem;
 }
 .theme__dark .welcome .content_left p{
     color: #b7b7b7;
@@ -230,13 +227,6 @@
     width: 100%;
 }
 /* Number  */
-.number{
-    margin-top: 60px;
-}
-.number .container{
-    max-width: 1290px;
-    margin: 0 auto;
-}
 .number .number_content{
     display: flex;
     justify-content: space-between;
@@ -261,7 +251,7 @@
     font-weight: 600;
     margin: 10px 0;
     display: block;
-    font-weight: bolder;
+    font-weight: 600;
     color: #070707;
 }
 .theme__dark .number .content_item span, .theme__dark .number .content_item p{
@@ -271,7 +261,19 @@
     font-size: 17px;
     color: #060606;
 }
-
+@media screen and (max-width:992px) {
+  .number .content_item span{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width:768px){
+  .number .content_item span{
+    font-size: 32px;
+  }
+  .number .content_item p{
+    font-size: 16px;
+  }
+}
 /* Team  */
 .team{
     background-color: #009F4D;
@@ -288,7 +290,7 @@
 }
 .team .team_title h2{
   position: absolute;
-  top: 55%;
+  top: 35%;
   left: 25%;
   transform: translate(-50%, -50%);
   opacity: 0.14;
@@ -297,7 +299,7 @@
 }
 .team h4{
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 400;
 }
 .team h3{
     font-size: 40px;
@@ -401,9 +403,14 @@
     color: black;
     font-size: 1.6rem;
 }
+@media screen and (max-width:992px){
+  .team h3{
+    font-size: 35px;
+  }
+}
 /* Product  */
-.product .container{
-    max-width: 950px ;
+.product .product_content{
+    max-width: 950px;
     margin: 0 auto;
 }
 .product .product_title h2{
@@ -469,6 +476,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: -25px;
     transform: translate(-50%, -50%);
     color: #FB8133;
     width: 50px;
@@ -480,6 +488,11 @@
     border-radius: 50%;
     text-align: center;
     font-size: 1.6rem;
+}
+@media screen and (max-width:768px) {
+  .product .product_title h2{
+    font-size: 30px;
+  }
 }
 /* Carousel  */
 .carousel{
