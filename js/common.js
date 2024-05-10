@@ -13,8 +13,17 @@ $(function () {
   iconTheme.forEach((theme) => {
     theme.addEventListener("click", function () {
       body.classList.toggle("theme__dark");
+      if (body.classList.contains("theme__dark")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
     });
   });
+
+  if (localStorage.getItem("theme") == "dark") {
+    body.classList.add("theme__dark");
+  }
 
   // handle ani scale input header
   const inputHeader = document.querySelector(".head__search");
