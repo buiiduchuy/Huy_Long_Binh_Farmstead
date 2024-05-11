@@ -18,13 +18,16 @@ h6 {
   margin-left: auto;
   font-family: "Source Sans Pro", sans-serif;
 }
-
+.theme__dark .header {
+  background-color: rgb(58, 127, 188) !important;
+}
+/* 
 @media screen and (max-width: 991px) {
   header.main__header {
     height: auto;
     padding: 1.7rem 0;
   }
-}
+} */
 
 .nav {
   position: relative;
@@ -44,17 +47,31 @@ h6 {
   position: relative;
 }
 
+.services.py-5 {
+  padding-top: 1.9rem !important;
+}
+
+.services .row {
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
+}
+
+.services .service__item {
+  margin-top: 4.7rem !important;
+}
+
 .services .service__item .item__box {
-  padding: 8rem 2.5rem 5rem;
+  padding: 5rem 3.5rem 4.2rem;
   position: relative;
   z-index: 1;
   border-radius: 1.5rem;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
   transition: 0.3s;
 }
+
 .theme__dark .services .service__item .item__box {
   background-color: var(--bg-color);
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1rem 2.5rem rgb(23 19 19);
   transition: 0.3s;
 }
 
@@ -105,8 +122,16 @@ h6 {
 		QUALITY
 ============================================================ */
 
+.qualify {
+  padding-top: 8.3rem !important;
+  padding-bottom: 8.5rem !important;
+}
 .qualify .row.custom__qualify > * {
   padding-right: 0rem;
+}
+
+.qualify .row.custom__qualify {
+  padding-left: 0rem !important;
 }
 
 .qualify .row.custom__padding {
@@ -119,6 +144,9 @@ h6 {
 .qualify .row.custom__padding > * {
   padding-left: 1rem;
 }
+.qualify .order__last {
+  margin-top: 1.03rem !important;
+}
 
 .qualify .order__last .custom__padding {
   padding-left: 0rem;
@@ -126,7 +154,6 @@ h6 {
 }
 
 .qualify img {
-  max-width: 100%;
   height: auto;
   border-radius: 3rem;
 }
@@ -138,7 +165,7 @@ h6 {
 
 .qualify .title {
   font-size: 4rem;
-  line-height: 5rem;
+  line-height: 5.1rem;
   font-weight: 600;
   color: #060606;
 }
@@ -179,8 +206,8 @@ h6 {
   font-size: 1.7rem;
 }
 
-.qualify .order__first.mt-5 {
-  margin-top: 4.5rem !important;
+.qualify .order__first {
+  padding-right: 0.7rem !important;
 }
 
 @media (min-width: 992px) {
@@ -197,7 +224,7 @@ h6 {
 
 @media (min-width: 992px) {
   .pl-lg-5 {
-    padding-left: 5rem !important;
+    padding-left: 5.5rem !important;
   }
 }
 @media (max-width: 568px) {
@@ -216,7 +243,8 @@ h6 {
 		Stats
 ============================================================ */
 .stats {
-  padding-bottom: 5rem !important;
+  padding-top: 2.9rem !important;
+  padding-bottom: 5.8rem !important;
 }
 
 .stats i {
@@ -230,11 +258,18 @@ h6 {
   font-size: 3.2rem;
 }
 
+.stats .row {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
 .stats p.counter {
-  font-size: 5rem;
+  font-size: 4.8rem;
   font-weight: 600;
   color: var(--title-color);
-  margin-top: 1.6rem 0 0rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0rem !important;
+  line-height: 1.52;
 }
 
 .stats p.count__text {
@@ -289,6 +324,11 @@ h6 {
   position: relative !important;
   z-index: 1;
 }
+
+.cover .row .col-md-7 {
+  padding-left: 0rem !important;
+}
+
 .cover h5 {
   font-size: 2.2rem;
 }
