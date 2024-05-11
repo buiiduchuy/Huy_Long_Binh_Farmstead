@@ -88,15 +88,39 @@ h6 {
   transition: 0.3s ease;
 }
 
+.card .blog__desc:hover {
+  color: var(--primary-color);
+}
+
 .theme__dark .card .blog__desc {
   color: var(--white);
+}
+
+.theme__dark .card .blog__desc:hover {
+  color: var(--primary-color);
 }
 
 .card btn__comp {
   font-size: 1.6rem;
   font-weight: 600;
 }
+@media (max-width: 480px) {
+  .card h6 {
+    font-size: 1.5rem;
+  }
+  .card .blog__desc {
+    font-size: 2rem;
+  }
+}
 
+@media (max-width: 992px) {
+  .card .blog__desc {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
 /* ============================================================
 		pagination
 ============================================================ */
@@ -182,6 +206,10 @@ input.search__field {
 
 input.search__field:focus {
   border: 0.1rem solid var(--black);
+}
+
+.theme__dark input.search__field:focus {
+  background-color: var(--white);
 }
 
 input.search__submit {
@@ -272,7 +300,6 @@ li.list__menu a:hover {
 .theme__dark li.list__menu a {
   color: var(--white) !important;
 }
-
 .theme__dark .widget__entries ul li,
 .theme__dark li.list__menu {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -280,4 +307,9 @@ li.list__menu a:hover {
 
 .theme__dark .widget__comments ul li {
   color: var(--text-color-dark-theme) !important;
+}
+
+.theme__dark .widget__entries ul li a:hover,
+.theme__dark li.list__menu a:hover {
+  color: var(--primary-color) !important;
 }
