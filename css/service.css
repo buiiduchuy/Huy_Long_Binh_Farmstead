@@ -41,11 +41,6 @@ h6 {
   padding-top: 1.9rem !important;
 }
 
-.services .row {
-  margin-left: -3rem !important;
-  margin-right: -3rem !important;
-}
-
 .services .service__item {
   margin-top: 4.7rem !important;
 }
@@ -115,13 +110,6 @@ h6 {
 .qualify {
   padding-top: 8.3rem !important;
   padding-bottom: 8.5rem !important;
-}
-.qualify .row.custom__qualify > * {
-  padding-right: 0rem;
-}
-
-.qualify .row.custom__qualify {
-  padding-left: 0rem !important;
 }
 
 .qualify .row.custom__padding {
@@ -229,6 +217,12 @@ h6 {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 992px) {
+  .qualify .order__first {
+    margin-top: 4.2rem !important;
+  }
+}
 /* ============================================================
 		Stats
 ============================================================ */
@@ -271,23 +265,33 @@ h6 {
 .theme__dark .stats p {
   color: var(--white);
 }
-
-@media (max-width: 480px) {
-  .stats p.counter {
-    font-size: 3.2rem;
-  }
-}
-
 @media (max-width: 991px) {
   .stats p.counter {
     font-size: 4rem;
   }
 }
+
 @media (max-width: 768px) {
   .stats i.fa {
     font-size: 4rem;
   }
 }
+
+@media (max-width: 480px) {
+  .stats i.fa {
+    font-size: 2em;
+  }
+  .stats p.counter {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .stats p.count__text {
+    font-size: 1.6rem;
+  }
+}
+
 /* ============================================================
 		Cover
 ============================================================ */
@@ -315,9 +319,9 @@ h6 {
   z-index: 1;
 }
 
-.cover .row .col-md-7 {
+/* .cover .row .col-md-7 {
   padding-left: 0rem !important;
-}
+} */
 
 .cover h5 {
   font-size: 2.2rem;
