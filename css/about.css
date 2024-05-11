@@ -12,24 +12,39 @@
     align-items: center;
     justify-content: space-between;
 }
-.welcome .content_left h4{
-  color: var(--primary-color);
-  font-size: 2.2rem;
+.welcome .box__title h2 {
+  color: var(--gray);
+  font-size: 10rem;
+  line-height: 0;
+  font-weight: bold;
 }
-.welcome .content_left h3{
+
+.welcome .theme__dark .box__title h2 {
+  color: var(--gray-drak);
+}
+
+.welcome .box__title h3 {
   color: var(--title-color);
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.25;
 }
-.theme__dark .welcome .content_left h3{
+
+.theme__dark .welcome .box__title h3 {
   color: var(--white);
 }
-.welcome .content_left p{
+
+.welcome .box__title h4 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+.welcome .box__title p {
   font-size: 2rem;
   margin-top: 1.6rem;
 }
-.welcome .content_left button{
+
+.welcome .btn__comp {
   background: var(--primary-color);
   box-shadow: none;
   border: 1px solid transparent;
@@ -42,28 +57,43 @@
   padding: 1.2rem 3rem;
   transition: all 0.3s;
 }
-.welcome .content_left button:hover{
+
+.welcome .btn__comp:hover {
   background: var(--second-color);
   border-color: var(--second-color);
+}
+
+.welcome .section {
+  padding: 10rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome .section {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .welcome .box__title h3 {
+    font-size: 3.5rem;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .welcome .box__title h3 {
+    font-size: 3rem;
+  }
+
+  .welcome .box__title h4 {
+    font-size: 1.8rem;
+  }
 }
 .welcome .content_right img{
     border-radius: 10px;
     width: 100%;
 }
-@media screen and (max-width:991px){
-  .welcome .content_left h3 {
-    font-size: 3.5rem;
-    line-height: 1.4;
-  }
-}
-@media screen and (max-width: 767px) {
-  .welcome .content_left h3 {
-    font-size: 3rem;
-  }
-  .welcome .content_left h4 {
-    font-size: 1.8rem;
-  }
-}
+
 /* Number  */
 .number .number_content{
     display: flex;
@@ -125,11 +155,11 @@
   max-width: 1580px;
   margin: 0 auto;
 } */
-.team .team_title{
+/* .team .team_title{
     position: relative;
     /* margin: 10px 0; */
-}
-.team .team_title h2{
+
+/* .team .team_title h2{
   position: absolute;
   top: 35%;
   left: 25%;
@@ -149,7 +179,24 @@
 .team p{
   font-size: 2rem;
   margin-top: 1.6rem;
+} */
+.team .box__title {
+  position: relative;
 }
+
+.team .box__title h2 {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  opacity: 0.14;
+  font-size: 12vw;
+}
+
+.theme__dark.team .box__title h2 {
+  color: var(--gray);
+}
+
 .team .content_group{
     background-color: white;
     border-radius: 10px;
@@ -244,28 +291,25 @@
     color: black;
     font-size: 1.6rem;
 }
-@media screen and (max-width:991px){
-  .team h3{
-    font-size: 35px;
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .box__title h3 {
+    font-size: 3.5rem;
     line-height: 1.4;
   }
 }
-@media screen and (max-width:767px) { 
-  .team .team_title h2{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.14;
-    font-size: 12vw;
-    color: white;
-  }
-  .team .team_title h3 {
+
+@media screen and (max-width: 767px) {
+  .box__title h3 {
     font-size: 3rem;
-    font-weight: 600;
   }
 
-  .team .team_title h4 {
+  .box__title h4 {
     font-size: 1.8rem;
   }
 }
@@ -274,21 +318,49 @@
     max-width: 950px;
     margin: 0 auto;
 }
-.product .product_title h2{
+
+.product .box__title h3 {
   color: var(--title-color);
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.25;
+  text-align: center;
 }
-.theme__dark .product_title h2 {
+
+.product .theme__dark .box__title h3 {
   color: var(--white);
 }
-.product .product_title p{
-  font-size: 2rem;
+
+.product .box__title p {
+  font-size: 1.6rem;
   margin-top: 1.6rem;
+  text-align: center;
 }
-.theme__dark .product_title p{
-  color: #b7b7b7;
+.section {
+  padding: 10rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .box__title h3 {
+    font-size: 3.5rem;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box__title h3 {
+    font-size: 3rem;
+  }
+
+  .box__title h4 {
+    font-size: 1.8rem;
+  }
 }
 .product .modal {
     background: rgba(11, 11, 11,0.95);
