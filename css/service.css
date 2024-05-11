@@ -201,7 +201,9 @@ h6 {
   .pl-lg-5 {
     padding-left: 5.5rem !important;
   }
+}
 
+@media (max-width: 992px) {
   .qualify .order__first {
     margin-top: 4.2rem !important;
   }
