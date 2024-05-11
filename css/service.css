@@ -136,11 +136,6 @@ h6 {
   border-radius: 3rem;
 }
 
-.qualify .small__title {
-  color: #fb811e;
-  font-size: 2.2rem;
-}
-
 .qualify .title {
   font-size: 4rem;
   line-height: 5.1rem;
@@ -317,18 +312,4 @@ h6 {
 .cover .container {
   position: relative !important;
   z-index: 1;
-}
-
-/* .cover .row .col-md-7 {
-  padding-left: 0rem !important;
-} */
-
-.cover h5 {
-  font-size: 2.2rem;
-}
-
-.cover h3 {
-  font-size: 4rem;
-  line-height: 5rem;
-  font-weight: 600;
 }
