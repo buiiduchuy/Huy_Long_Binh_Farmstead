@@ -212,6 +212,10 @@ p {
     font-size: 3.5rem;
     line-height: 1.4;
   }
+
+  .box__title h2 {
+    font-size: 8rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -284,6 +288,10 @@ p {
 .header.fixed .logo .logo__link,
 .header .logo:hover .logo__link {
   color: var(--title-color);
+}
+
+.theme__dark .header .logo:hover .logo__link {
+  color: var(--white);
 }
 
 .theme__dark .header.fixed .logo .logo__link {
