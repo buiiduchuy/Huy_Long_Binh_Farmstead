@@ -4,7 +4,7 @@ const footer = `
     <div class="row">
       <div class="col-lg-4 col-md-6 order-lg-0">
         <div class="foot__contact">
-          <h3 class="mb-5">FIND US</h3>
+          <h3 class="mb-4 mb-md-5">FIND US</h3>
           <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
           <p>Phone: <a href="tel:+12 23456790">+12 23456790</a></p>
           <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
@@ -13,7 +13,7 @@ const footer = `
       </div>
       <div class="col-lg-4 col-md-6 order-lg-2">
         <div class="foot__news">
-        <h3 class="mb-5">NEWSLETTER</h3>
+        <h3 class="mb-4 mb-md-5">NEWSLETTER</h3>
           <p>Subscribe to our mailing list and get updates to your email inbox.</p>
         <form action="#" class="form__foot mt-4">
           <input type="email" placeholder="Email Adress">

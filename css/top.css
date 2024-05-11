@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 767px) {
   #welcome {
-    padding: 0 0.7rem;
+    padding: 0;
   }
 
   #welcome .box__title {
@@ -113,6 +113,10 @@
     transform: translate(-50%, -50%);
     border-radius: 1rem;
     padding: 6rem 2rem 3rem 4rem;
+  }
+
+  .theme__dark #welcome .box__title {
+    background: var(--bg-color);
   }
 
   #welcome .box__title h2 {
