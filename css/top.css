@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  #welcome .box__title h3 {
+    font-size: 3.2rem;
+  }
+
   #welcome .box__title {
     left: 8rem;
   }
@@ -433,9 +437,8 @@
 /* ============================================================
 		GALLERY
 ============================================================ */
-#list__gallery,
-#list__gallery .item {
-  padding: 0 !important;
+.list__gallery {
+  padding: 0 1.5rem;
 }
 
 #gallery .list__gallery .item:nth-child(1) {
