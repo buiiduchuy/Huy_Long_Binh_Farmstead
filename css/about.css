@@ -148,7 +148,7 @@
 /* Team  */
 .team{
     background-color: #009F4D;
-    padding: 30px 0;
+    padding: 70px 0;
     margin: 60px 0;
 }
 /* .team .container{
@@ -190,11 +190,31 @@
   left: 25%;
   transform: translate(-50%, -50%);
   opacity: 0.14;
-  font-size: 12vw;
+  font-size: 10vw;
 }
 
-.theme__dark.team .box__title h2 {
+.theme__dark .team .box__title h2 {
   color: var(--gray);
+}
+.team .box__title h3 {
+  color: var(--title-color);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.theme__dark .team .box__title h3 {
+  color: var(--white);
+}
+
+.team .box__title h4 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+.team .box__title p {
+  font-size: 2rem;
+  margin-top: 1.6rem;
 }
 
 .team .content_group{
@@ -232,7 +252,7 @@
     opacity: 1;
 }
 .team .item_pic:hover .overlay_title{
-    transform: translateY(0);
+    transform: translateY(50px);
     opacity: 1;
 }
 .team .overlay_title{
@@ -252,6 +272,7 @@
 .team .overlay_title h3:hover{
     color: #FB8133;
     cursor: pointer;
+    transform: translateY(0);
 }
 .team .overlay_contact{
     position: absolute;
@@ -292,24 +313,27 @@
     font-size: 1.6rem;
 }
 @media screen and (max-width: 1200px) {
-  .section {
+  .team .section {
     padding: 6rem 0;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .box__title h3 {
+  .team .box__title h3 {
     font-size: 3.5rem;
     line-height: 1.4;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .box__title h3 {
+  .team{
+    padding: 48px 0;
+  }
+  .team .box__title h3 {
     font-size: 3rem;
   }
 
-  .box__title h4 {
+  .team .box__title h4 {
     font-size: 1.8rem;
   }
 }
@@ -327,7 +351,7 @@
   text-align: center;
 }
 
-.product .theme__dark .box__title h3 {
+ .theme__dark .product .box__title h3 {
   color: var(--white);
 }
 
@@ -423,11 +447,7 @@
     text-align: center;
     font-size: 1.6rem;
 }
-@media screen and (max-width:767px) {
-  .product .product_title h2{
-    font-size: 30px;
-  }
-}
+
 /* Carousel 2  */
 /* ============================================================
 		TESTIMONIALS
