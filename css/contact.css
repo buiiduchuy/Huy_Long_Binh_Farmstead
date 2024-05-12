@@ -4,7 +4,6 @@
 #contact ul li h6 {
   color: var(--title-color);
   font-size: 1.8rem;
-  font-weight: 600;
 }
 
 .theme__dark #contact ul li h6 {
@@ -14,10 +13,6 @@
 #contact ul li .icon i {
   color: var(--primary-color);
   font-size: 2rem;
-}
-
-#contact ul li p {
-  font-size: 1.7rem;
 }
 
 #contact ul li a {
@@ -35,7 +30,6 @@
 
 #contact .form__contact input,
 #contact .form__contact textarea {
-  width: 100%;
   border: 1px solid #eee;
   padding: 1.4rem;
 }

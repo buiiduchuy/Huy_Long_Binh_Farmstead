@@ -347,7 +347,7 @@ header .head__search input:focus {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
-  min-width: 20rem;
+  min-width: 22rem;
 }
 
 .theme__dark .header nav {
@@ -776,7 +776,7 @@ header .head__search input:focus {
   background-size: cover;
   position: relative;
   z-index: 0;
-  padding: 6.57rem 0 !important;
+  padding: 5rem 0 !important;
 }
 
 .section__breadCrumb {
@@ -817,8 +817,8 @@ header .head__search input:focus {
   margin-bottom: 0.75rem !important;
   color: var(--title-color);
   font-size: 2.4rem;
-  transition: 0.5s all;
 }
+
 .theme__dark .breadCrumb .title {
   color: var(--white);
 }
@@ -831,12 +831,6 @@ header .head__search input:focus {
 .theme__dark .custom__path a {
   color: var(--text-color-dark-theme);
   transition: 0.5s all;
-}
-
-@media screen and (max-width: 991px) {
-  .breadCrumb {
-    padding: 2.7rem 0 !important;
-  }
 }
 
 @media screen and (max-width: 767px) {

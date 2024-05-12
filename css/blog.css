@@ -4,36 +4,17 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
   line-height: 2.8rem;
   clear: both;
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
-@media screen and (max-width: 991px) {
-  header.main__header {
-    height: auto;
-    padding: 17px 0;
-  }
-}
-
-.nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.6rem 1rem;
-  color: #fb811e;
+.section .item {
+  margin-bottom: 5rem;
 }
 
 /* ============================================================
@@ -41,13 +22,11 @@ h6 {
 ============================================================ */
 
 .card {
-  border: none;
   background-color: var(--white);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  height: auto;
   border-radius: 0.8rem;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 1.6rem;
 }
 
 .theme__dark .card {
@@ -55,9 +34,6 @@ h6 {
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
-  display: block;
   border-radius: 0.8rem;
 }
 
@@ -78,10 +54,8 @@ h6 {
 }
 
 .card .blog__desc {
-  display: block;
   font-size: 2.6rem;
   line-height: 3.4rem;
-  font-weight: 700;
   color: var(--title-color);
   margin-top: 1rem;
   margin-bottom: 0.8rem;
@@ -118,10 +92,12 @@ h6 {
   .card h6 {
     font-size: 1.5rem;
   }
+
   .card .blog__desc {
     font-size: 2rem;
   }
 }
+
 /* ============================================================
 		pagination
 ============================================================ */
@@ -158,6 +134,7 @@ a.page__numbers:hover {
   position: sticky;
   top: 10rem;
 }
+
 .widget {
   background: var(--white);
   border-radius: 3rem;
@@ -187,6 +164,7 @@ a.page__numbers:hover {
 .widget__search {
   position: relative;
 }
+
 input.search__field {
   outline: none;
   width: 100%;
@@ -301,6 +279,7 @@ li.list__menu a:hover {
 .theme__dark li.list__menu a {
   color: var(--white) !important;
 }
+
 .theme__dark .widget__entries ul li,
 .theme__dark li.list__menu {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
