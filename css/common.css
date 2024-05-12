@@ -601,6 +601,10 @@ header .head__search input:focus {
   color: var(--title-color);
 }
 
+.theme__dark .footer .logo .logo__link:hover {
+  color: var(--white);
+}
+
 .footer .logo .logo__link i {
   text-align: center;
 }
