@@ -229,6 +229,10 @@ p {
   .box__title h4 {
     font-size: 1.8rem;
   }
+
+  .box__title p {
+    font-size: 1.7rem;
+  }
 }
 
 /* ============================================================
@@ -639,6 +643,7 @@ header .head__search input:focus {
 
 .footer p a.w3L {
   color: var(--second-color);
+  transition: all 0.3s;
 }
 
 .footer p a:hover {
@@ -671,6 +676,7 @@ header .head__search input:focus {
 .theme__dark .form__foot input {
   background: #0b0d0e;
   border-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
 }
 
 .form__foot button {
